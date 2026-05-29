@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil e Argentina - Copa do Mundo 2026</title>
+    <style>
+        :root {
+            --brazil-green: #009c3b;
+            --brazil-yellow: #ffdf00;
+            --argentina-blue: #74acdf;
+            --dark-bg: #121214;
+            --card-bg: #1d1d22;
+            --text-color: #ffffff;
+            --text-secondary: #a4a4b2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #004b1c 0%, #3a1d5d 50%, #1f4268 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--brazil-yellow);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .title-brasil {
+            border-bottom: 3px solid var(--brazil-green);
+        }
+
+        .title-argentina {
+            border-bottom: 3px solid var(--argentina-blue);
+        }
+
+        .grid-jogos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .card-jogo {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-jogo:hover {
+            transform: translateY(-5px);
+        }
+
+        .badge-rodada {
+            background-color: rgba(255,255,255,0.1);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            align-self: flex-start;
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+
+        .confronto {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .time {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            text-align: center;
+        }
+
+        .vs {
+            color: var(--brazil-yellow);
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        .info-detalhes {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 15px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .info-detalhes div {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 60px;
+            border-top: 1px solid var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Copa do Mundo 2026</h1>
+        <p>Acompanhe a agenda dos gigantes sul-americanos na fase de grupos (Horários de Brasília)</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- SEÇÃO BRASIL -->
+        <h2 class="section-title title-brasil">🇧🇷 Seleção Brasileira (Grupo C)</h2>
+        <div class="grid-jogos">
+            
+            <!-- Jogo 1 -->
+            <div class="card-jogo" style="border-left: 5px solid var(--brazil-green)">
+                <div>
+                    <span class="badge-rodada">1ª Rodada</span>
+                    <div class="confronto">
+                        <div class="time"><span>Brasil</span></div>
+                        <div class="vs">X</div>
+                        <div class="time"><span>Marrocos</span></div>
+                    </div>
+                </div>
+                <div class="info-detalhes">
+                    <div>📅 Sábado, 13 de junho de 2026</div>
+                    <div>⏰ 19:00</div>
+                    <div>📍 MetLife Stadium (Nova York/Nova Jersey)</div>
+                </div>
+            </div>
+
+            <!-- Jogo 2 -->
+            <div class="card-jogo" style="border-left: 5px solid var(--brazil-green)">
+                <div>
+                    <span class="badge-rodada">2ª Rodada</span>
+                    <div class="confronto">
+                        <div class="time"><span>Brasil</span></div>
+                        <div class="vs">X</div>
+                        <div class="time"><span>Haiti</span></div>
+                    </div>
+                </div>
+                <div class="info-detalhes">
+                    <div>📅 Sexta-feira, 19 de junho de 2026</div>
+                    <div>⏰ 21:30</div>
+                    <div>📍 Lincoln Financial Field (Filadélfia)</div>
+                </div>
+            </div>
+
+            <!-- Jogo 3 -->
+            <div class="card-jogo" style="border-left: 5px solid var(--brazil-green)">
+                <div>
+                    <span class="badge-rodada">3ª Rodada</span>
+                    <div class="confronto">
+                        <div class="time"><span>Escócia</span></div>
+                        <div class="vs">X</div>
+                        <div class="time"><span>Brasil</span></div>
+                    </div>
+                </div>
+                <div class="info-detalhes">
+                    <div>📅 Quarta-feira, 24 de junho de 2026</div>
+                    <div>⏰ 19:00</div>
+                    <div>📍 Hard Rock Stadium (Miami)</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEÇÃO ARGENTINA -->
+        <h2 class="section-title title-argentina">🇦🇷 Seleção Argentina (Grupo J)</h2>
+        <div class="grid-jogos">
+            
+            <!-- Jogo 1 -->
+            <div class="card-jogo" style="border-left: 5px solid var(--argentina-blue)">
+                <div>
+                    <span class="badge-rodada">1ª Rodada</span>
+                    <div class="confronto">
+                        <div class="time"><span>Argentina</span></div>
+                        <div class="vs">X</div>
+                        <div class="time"><span>Argélia</span></div>
+                    </div>
+                </div>
+                <div class="info-detalhes">
+                    <div>📅 Terça-feira, 16 de junho de 2026</div>
+                    <div>⏰ 22:00</div>
+                    <div>📍 Arrowhead Stadium (Kansas City)</div>
+                </div>
+            </div>
+
+            <!-- Jogo 2 -->
+            <div class="card-jogo" style="border-left: 5px solid var(--argentina-blue)">
+                <div>
+                    <span class="badge-rodada">2ª Rodada</span>
+                    <div class="confronto">
+                        <div class="time"><span>Argentina</span></div>
+                        <div class="vs">X</div>
+                        <div class="time"><span>Áustria</span></div>
+                    </div>
+                </div>
+                <div class="info-detalhes">
+                    <div>📅 Segunda-feira, 22 de junho de 2026</div>
+                    <div>⏰ 14:00</div>
+                    <div>📍 AT&T Stadium (Dallas)</div>
+                </div>
+            </div>
+
+            <!-- Jogo 3 -->
+            <div class="card-jogo" style="border-left: 5px solid var(--argentina-blue)">
+                <div>
+                    <span class="badge-rodada">3ª Rodada</span>
+                    <div class="confronto">
+                        <div class="time"><span>Jordânia</span></div>
+                        <div class="vs">X</div>
+                        <div class="time"><span>Argentina</span></div>
+                    </div>
+                </div>
+                <div class="info-detalhes">
+                    <div>📅 Domingo, 28 de junho de 2026</div>
+                    <div>⏰ 23:00</div>
+                    <div>📍 AT&T Stadium (Dallas)</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Guia de Jogos da Copa do Mundo | Desenvolvido para torcedores.</p>
+    </footer>
+
+</body>
+</html>
